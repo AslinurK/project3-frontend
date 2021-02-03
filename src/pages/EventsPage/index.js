@@ -89,20 +89,20 @@ export default function EventsPage({ history }) {
                     </FormGroup>
                     <FormGroup>
                         <Label>Event price: </Label>
-                        <Input id="price" type="text" value={price} placeholder={'Event Price £0.00'} onChange={(evt) => setPrice(evt.target.value)} />
+                        <Input id="price" type="text" value={price} placeholder={'Event Price $0.00'} onChange={(evt) => setPrice(evt.target.value)} />
                     </FormGroup>
                     <FormGroup>
                         <Label>Event date: </Label>
-                        <Input id="date" type="date" value={date} placeholder={'Event Price £0.00'} onChange={(evt) => setDate(evt.target.value)} />
+                        <Input id="date" type="date" value={date} placeholder={'Event Price $0.00'} onChange={(evt) => setDate(evt.target.value)} />
                     </FormGroup>
                     <FormGroup>
                         <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
                             <Button id="caret" value={sport} disabled>{sport}</Button>
                             <DropdownToggle caret />
                             <DropdownMenu>
-                                <DropdownItem onClick={() => sportEventHandler('running')}>running</DropdownItem>
-                                <DropdownItem onClick={() => sportEventHandler('cycling')}>cycling</DropdownItem>
-                                <DropdownItem onClick={() => sportEventHandler('swimming')}>swimming</DropdownItem>
+                                <DropdownItem onClick={() => sportEventHandler('running')}>Outdoor Strength</DropdownItem>
+                                <DropdownItem onClick={() => sportEventHandler('cycling')}>Outdoor Yoga</DropdownItem>
+                                <DropdownItem onClick={() => sportEventHandler('swimming')}>Virtual Classes</DropdownItem>
                             </DropdownMenu>
                         </ButtonDropdown>
                     </FormGroup>

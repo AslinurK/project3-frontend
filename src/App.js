@@ -8,7 +8,8 @@ function App() {
   return (
     <ContextWrapper>
       <Container>
-        <h1>Sport's App</h1>
+        <h1>EZ WELLNESS</h1>
+        <h2>Class management for socially distanced in-person and online classes</h2>
         <div className="content">
           <Routes />
         </div>
